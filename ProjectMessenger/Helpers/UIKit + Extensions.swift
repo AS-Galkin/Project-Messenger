@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: - UIBUtton extension
 extension UIButton {
     convenience init(title: String,
                      titleColor: UIColor,
@@ -31,6 +32,7 @@ extension UIButton {
     }
 }
 
+//MARK: - UIImageView extension
 extension UIImageView {
     convenience init(image: UIImage, contentMode: UIImageView.ContentMode) {
         self.init()
@@ -39,6 +41,7 @@ extension UIImageView {
     }
 }
 
+//MARK: - UIFont extension
 extension UIFont {
     static let avenir20 = UIFont(name: "Avenir", size: 20.0)
 }

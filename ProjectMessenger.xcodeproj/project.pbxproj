@@ -18,6 +18,7 @@
 		94EA21352715B40B00F7843E /* AuthViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21342715B40B00F7843E /* AuthViewControllerTests.swift */; };
 		94EA21382715B43800F7843E /* UIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21372715B43800F7843E /* UIElementsTests.swift */; };
 		94EA213A2715B5CD00F7843E /* UIKit + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21392715B5CD00F7843E /* UIKit + Extensions.swift */; };
+		94EA213D2715BEDC00F7843E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94EA213F2715BEDC00F7843E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		94EA21342715B40B00F7843E /* AuthViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerTests.swift; sourceTree = "<group>"; };
 		94EA21372715B43800F7843E /* UIElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementsTests.swift; sourceTree = "<group>"; };
 		94EA21392715B5CD00F7843E /* UIKit + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit + Extensions.swift"; sourceTree = "<group>"; };
+		94EA213E2715BEDC00F7843E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94EA21402715BF8D00F7843E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		94EA20CA271586FB00F7843E /* ProjectMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				94EA213F2715BEDC00F7843E /* Localizable.strings */,
 				94EA21332715B3AD00F7843E /* Helpers */,
 				94EA20CB271586FB00F7843E /* AppDelegate.swift */,
 				94EA20CD271586FB00F7843E /* SceneDelegate.swift */,
@@ -243,6 +247,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 94EA20BF271586FB00F7843E;
 			productRefGroup = 94EA20C9271586FB00F7843E /* Products */;
@@ -262,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EA20D8271586FD00F7843E /* LaunchScreen.storyboard in Resources */,
+				94EA213D2715BEDC00F7843E /* Localizable.strings in Resources */,
 				94EA20D5271586FD00F7843E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +343,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		94EA213F2715BEDC00F7843E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94EA213E2715BEDC00F7843E /* en */,
+				94EA21402715BF8D00F7843E /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -344,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -405,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

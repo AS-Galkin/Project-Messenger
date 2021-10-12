@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ProjectMessenger
+
+  Created by Александр Галкин on 12.10.2021.
+  
+*/
+"emailButton" = "Email"
+"loginButton" = "Login"
+"signWithLabel" = "Get started with"
+"signUpLabel" = "Or sign up with"
+"loginLabel" = "Already onboard"
