@@ -17,6 +17,7 @@
 		94EA20EF271586FE00F7843E /* ProjectMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20EE271586FE00F7843E /* ProjectMessengerUITestsLaunchTests.swift */; };
 		94EA21352715B40B00F7843E /* AuthViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21342715B40B00F7843E /* AuthViewControllerTests.swift */; };
 		94EA21382715B43800F7843E /* UIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21372715B43800F7843E /* UIElementsTests.swift */; };
+		94EA213A2715B5CD00F7843E /* UIKit + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21392715B5CD00F7843E /* UIKit + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		94EA20EE271586FE00F7843E /* ProjectMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94EA21342715B40B00F7843E /* AuthViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerTests.swift; sourceTree = "<group>"; };
 		94EA21372715B43800F7843E /* UIElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementsTests.swift; sourceTree = "<group>"; };
+		94EA21392715B5CD00F7843E /* UIKit + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		94EA21332715B3AD00F7843E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				94EA21392715B5CD00F7843E /* UIKit + Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EA213A2715B5CD00F7843E /* UIKit + Extensions.swift in Sources */,
 				94EA20D0271586FB00F7843E /* AuthViewController.swift in Sources */,
 				94EA20CC271586FB00F7843E /* AppDelegate.swift in Sources */,
 				94EA20CE271586FB00F7843E /* SceneDelegate.swift in Sources */,
