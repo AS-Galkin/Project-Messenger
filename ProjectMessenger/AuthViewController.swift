@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AuthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     }
 }
 
+
+//MARK: - UIKit+SwiftUI+Canvas
 import SwiftUI
 
 struct ViewControllerProvider: PreviewProvider {
@@ -24,7 +26,7 @@ struct ViewControllerProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         
-        let vc = ViewController()
+        let vc = AuthViewController()
         
         func makeUIViewController(context: Context) -> some UIViewController {
             return vc

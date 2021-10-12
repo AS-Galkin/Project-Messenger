@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		94EA20CC271586FB00F7843E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20CB271586FB00F7843E /* AppDelegate.swift */; };
 		94EA20CE271586FB00F7843E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20CD271586FB00F7843E /* SceneDelegate.swift */; };
-		94EA20D0271586FB00F7843E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20CF271586FB00F7843E /* ViewController.swift */; };
+		94EA20D0271586FB00F7843E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20CF271586FB00F7843E /* AuthViewController.swift */; };
 		94EA20D5271586FD00F7843E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94EA20D4271586FD00F7843E /* Assets.xcassets */; };
 		94EA20D8271586FD00F7843E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EA20D6271586FD00F7843E /* LaunchScreen.storyboard */; };
 		94EA20E3271586FE00F7843E /* ProjectMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20E2271586FE00F7843E /* ProjectMessengerTests.swift */; };
 		94EA20ED271586FE00F7843E /* ProjectMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20EC271586FE00F7843E /* ProjectMessengerUITests.swift */; };
 		94EA20EF271586FE00F7843E /* ProjectMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA20EE271586FE00F7843E /* ProjectMessengerUITestsLaunchTests.swift */; };
+		94EA21352715B40B00F7843E /* AuthViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21342715B40B00F7843E /* AuthViewControllerTests.swift */; };
+		94EA21382715B43800F7843E /* UIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21372715B43800F7843E /* UIElementsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		94EA20C8271586FB00F7843E /* ProjectMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EA20CB271586FB00F7843E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94EA20CD271586FB00F7843E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94EA20CF271586FB00F7843E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94EA20CF271586FB00F7843E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		94EA20D4271586FD00F7843E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94EA20D7271586FD00F7843E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94EA20D9271586FD00F7843E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		94EA20E8271586FE00F7843E /* ProjectMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EA20EC271586FE00F7843E /* ProjectMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMessengerUITests.swift; sourceTree = "<group>"; };
 		94EA20EE271586FE00F7843E /* ProjectMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		94EA21342715B40B00F7843E /* AuthViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerTests.swift; sourceTree = "<group>"; };
+		94EA21372715B43800F7843E /* UIElementsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElementsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,10 @@
 		94EA20CA271586FB00F7843E /* ProjectMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				94EA21332715B3AD00F7843E /* Helpers */,
 				94EA20CB271586FB00F7843E /* AppDelegate.swift */,
 				94EA20CD271586FB00F7843E /* SceneDelegate.swift */,
-				94EA20CF271586FB00F7843E /* ViewController.swift */,
+				94EA20CF271586FB00F7843E /* AuthViewController.swift */,
 				94EA20D4271586FD00F7843E /* Assets.xcassets */,
 				94EA20D6271586FD00F7843E /* LaunchScreen.storyboard */,
 				94EA20D9271586FD00F7843E /* Info.plist */,
@@ -110,6 +115,8 @@
 		94EA20E1271586FE00F7843E /* ProjectMessengerTests */ = {
 			isa = PBXGroup;
 			children = (
+				94EA21362715B41E00F7843E /* UIElementsTest */,
+				94EA20FB27158C5E00F7843E /* ViewControllerTests */,
 				94EA20E2271586FE00F7843E /* ProjectMessengerTests.swift */,
 			);
 			path = ProjectMessengerTests;
@@ -122,6 +129,29 @@
 				94EA20EE271586FE00F7843E /* ProjectMessengerUITestsLaunchTests.swift */,
 			);
 			path = ProjectMessengerUITests;
+			sourceTree = "<group>";
+		};
+		94EA20FB27158C5E00F7843E /* ViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				94EA21342715B40B00F7843E /* AuthViewControllerTests.swift */,
+			);
+			path = ViewControllerTests;
+			sourceTree = "<group>";
+		};
+		94EA21332715B3AD00F7843E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		94EA21362715B41E00F7843E /* UIElementsTest */ = {
+			isa = PBXGroup;
+			children = (
+				94EA21372715B43800F7843E /* UIElementsTests.swift */,
+			);
+			path = UIElementsTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94EA20D0271586FB00F7843E /* ViewController.swift in Sources */,
+				94EA20D0271586FB00F7843E /* AuthViewController.swift in Sources */,
 				94EA20CC271586FB00F7843E /* AppDelegate.swift in Sources */,
 				94EA20CE271586FB00F7843E /* SceneDelegate.swift in Sources */,
 			);
@@ -264,6 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EA21382715B43800F7843E /* UIElementsTests.swift in Sources */,
+				94EA21352715B40B00F7843E /* AuthViewControllerTests.swift in Sources */,
 				94EA20E3271586FE00F7843E /* ProjectMessengerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
