@@ -6,22 +6,30 @@
 //
 
 import XCTest
-
+@testable import ProjectMessenger
 
 class UIElementsTests: XCTestCase {
     
     var button: UIButton?
+    var imageView: UIImageView?
 
     override func setUpWithError() throws {
         button = UIButton(title: "Foo", titleColor: .black, backgroundColor: .white)
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "Sent"), contentMode: UIImageView.ContentMode.scaleAspectFit)
+
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        button = nil
+        imageView = nil
     }
 
-    func testButton_ConvinienceInit_IsNotNill() throws {
+    func testButton_ConvenienceInit_IsNotNill() {
         XCTAssertNotNil(button)
+    }
+    
+    func testImageView_ConvenienceInit_isNotNill() {
+        XCTAssertNotNil(imageView)
     }
 
 }
