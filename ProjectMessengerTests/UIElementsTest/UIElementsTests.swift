@@ -15,7 +15,7 @@ class UIElementsTests: XCTestCase {
 
     override func setUpWithError() throws {
         button = UIButton(title: "Foo", titleColor: .black, backgroundColor: .white)
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "Sent"), contentMode: UIImageView.ContentMode.scaleAspectFit)
+        imageView = UIImageView(image: #imageLiteral(resourceName: "Sent"), contentMode: UIImageView.ContentMode.scaleAspectFit)
 
     }
 

@@ -31,6 +31,13 @@ extension UIButton {
     }
 }
 
+extension UIImageView {
+    convenience init(image: UIImage, contentMode: UIImageView.ContentMode) {
+        self.init()
+        self.image = image
+        self.contentMode = contentMode
+    }
+}
 
 extension UIFont {
     static let avenir20 = UIFont(name: "Avenir", size: 20.0)
