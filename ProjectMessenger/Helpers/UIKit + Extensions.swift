@@ -45,3 +45,12 @@ extension UIImageView {
 extension UIFont {
     static let avenir20 = UIFont(name: "Avenir", size: 20.0)
 }
+
+//MARK: -UILabel extension
+
+extension UILabel {
+    convenience init(text: String) {
+        self.init()
+        self.text = text
+    }
+}

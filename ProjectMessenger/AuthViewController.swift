@@ -8,6 +8,15 @@
 import UIKit
 
 class AuthViewController: UIViewController {
+    
+    let signWithButton = UIButton(title: NSLocalizedString("signWithButton", comment: ""), titleColor: .black, backgroundColor: .white, isShadow: true)
+    let signUpButton = UIButton(title: NSLocalizedString("signUpButton", comment: ""), titleColor: .white, backgroundColor: .black)
+    let loginButton = UIButton(title: NSLocalizedString("loginButton", comment: ""), titleColor: .white, backgroundColor: .black)
+    let logoImageView = UIImageView(image: #imageLiteral(resourceName: "Logo"), contentMode: .scaleAspectFit)
+    let signWithLabel = UILabel(text: NSLocalizedString("signWithLabel", comment: ""))
+    let signUpLabel = UILabel(text: NSLocalizedString("signUpLabel", comment: ""))
+    let loginLabel = UILabel(text: NSLocalizedString("loginLabel", comment: ""))
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

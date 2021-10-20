@@ -19,6 +19,7 @@
 		94EA21382715B43800F7843E /* UIElementsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21372715B43800F7843E /* UIElementsTests.swift */; };
 		94EA213A2715B5CD00F7843E /* UIKit + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21392715B5CD00F7843E /* UIKit + Extensions.swift */; };
 		94EA213D2715BEDC00F7843E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94EA213F2715BEDC00F7843E /* Localizable.strings */; };
+		94EA21432715D6B300F7843E /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA21422715D6B300F7843E /* LoginButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		94EA21392715B5CD00F7843E /* UIKit + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit + Extensions.swift"; sourceTree = "<group>"; };
 		94EA213E2715BEDC00F7843E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		94EA21402715BF8D00F7843E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		94EA21422715D6B300F7843E /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		94EA20CA271586FB00F7843E /* ProjectMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				94EA21412715D69E00F7843E /* Views */,
 				94EA213F2715BEDC00F7843E /* Localizable.strings */,
 				94EA21332715B3AD00F7843E /* Helpers */,
 				94EA20CB271586FB00F7843E /* AppDelegate.swift */,
@@ -159,6 +162,14 @@
 				94EA21372715B43800F7843E /* UIElementsTests.swift */,
 			);
 			path = UIElementsTest;
+			sourceTree = "<group>";
+		};
+		94EA21412715D69E00F7843E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				94EA21422715D6B300F7843E /* LoginButtonView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +308,7 @@
 				94EA20D0271586FB00F7843E /* AuthViewController.swift in Sources */,
 				94EA20CC271586FB00F7843E /* AppDelegate.swift in Sources */,
 				94EA20CE271586FB00F7843E /* SceneDelegate.swift in Sources */,
+				94EA21432715D6B300F7843E /* LoginButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
