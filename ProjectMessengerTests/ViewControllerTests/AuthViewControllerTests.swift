@@ -6,29 +6,35 @@
 //
 
 import XCTest
+@testable import ProjectMessenger
 
 class AuthViewControllerTests: XCTestCase {
 
-    
+    var vc: AuthViewController?
     
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        vc = AuthViewController()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        vc = nil
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testUIElementsViewIsCreated() {
+        vc?.viewDidLoad()
+        XCTAssertNotNil(vc?.signWithButton)
+        XCTAssertNotNil(vc?.signUpButton)
+        XCTAssertNotNil(vc?.loginButton)
+        XCTAssertNotNil(vc?.logoImageView)
+        XCTAssertNotNil(vc?.signUpLabel)
+        XCTAssertNotNil(vc?.loginLabel)
+        XCTAssertNotNil(vc?.signWithButtonView)
+        XCTAssertNotNil(vc?.signUpButtonView)
+        XCTAssertNotNil(vc?.loginButtonView)
+        XCTAssertNotNil(vc?.loginStackView)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testConstraintsIsCreated() {
+        
     }
-
 }

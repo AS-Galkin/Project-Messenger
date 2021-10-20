@@ -14,17 +14,22 @@ class UIElementsTests: XCTestCase {
     var imageView: UIImageView?
     var label: UILabel?
     var buttonView: LoginButtonView?
+    var stackView: UIStackView?
 
     override func setUpWithError() throws {
         button = UIButton(title: "Foo", titleColor: .black, backgroundColor: .white, font: .boldSystemFont(ofSize: 20), isShadow: true, cornerRadius: 6)
         imageView = UIImageView(image: #imageLiteral(resourceName: "Sent"), contentMode: UIImageView.ContentMode.scaleAspectFit)
         label = UILabel(text: NSLocalizedString("signUpLabel", comment: ""))
         buttonView = LoginButtonView(button: button!, label: label!)
+        stackView = UIStackView(subviews: [buttonView!], spacing: 40, axis: .vertical)
     }
 
     override func tearDownWithError() throws {
         button = nil
         imageView = nil
+        label = nil
+        buttonView = nil
+        stackView = nil
     }
 
     func testButton_ConvenienceInit_IsNotNill() {
@@ -45,6 +50,10 @@ class UIElementsTests: XCTestCase {
     
     func testInitLoginButtonView() {
         XCTAssertNotNil(buttonView)
+    }
+    
+    func testStackViewIsCreated() {
+        XCTAssertNotNil(stackView)
     }
     
     func testBaseConstraintsInLoginButtonViewIsActive() {

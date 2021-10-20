@@ -54,3 +54,12 @@ extension UILabel {
         self.text = text
     }
 }
+
+//MARK: - UIStackView extension
+extension UIStackView {
+    convenience init(subviews: [UIView], spacing: CGFloat, axis: NSLayoutConstraint.Axis) {
+        self.init(arrangedSubviews: subviews)
+        self.spacing = spacing
+        self.axis = axis
+    }
+}
