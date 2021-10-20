@@ -2,5 +2,5 @@ language: objective-c
 osx_image: xcode12.5
 xcode_project: ProjectMessenger.xcodeproj
 xcode_scheme: ProjectMessenger
-xcode_destination: platform=iOS Simulator,OS=14.7,name=iPhone 12 mini
+xcode_destination: platform=iOS Simulator,OS=14.5,name=iPhone 12 mini
 
