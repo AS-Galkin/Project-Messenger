@@ -32,7 +32,7 @@ class LoginButtonView: UIView {
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: self.topAnchor),
             label.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 3),
+            button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 15),
             button.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             button.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             button.heightAnchor.constraint(equalToConstant: 60),
